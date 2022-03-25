@@ -7,8 +7,9 @@ You can learn more about Commerce.js & Chec at https://commercejs.com.
 ## Setup Instructions
 1. Set up a Netlify account with a fork of the repo. See the [Netlify docs](https://docs.netlify.com/configure-builds/repo-permissions-linking/) for more information.
 2. [Create a webhook](https://dashboard.chec.io/settings/webhooks/add) in the dashboard with the event `order.create`, the URL of your Netlify app and make sure `active` is set.
-3. Copy the signing key from your newly created webhook and add it to the Netlify enviroment variables along with your Shopify API credentials.
-4. You can customize any [extra fields](https://commercejs.com/docs/api/#extra-fields) in a manner similar to the example if required, otherwise you can remove those lines.
+3. Copy the signing key from your newly created webhook and add it to the Netlify enviroment variables.
+4. To get your Shopify API ceredentials, you will need to create a private Shopify app and use the crentials associated with that app. You can find more information on how to set that up and work with them [here](https://help.shopify.com/en/manual/apps/private-apps).
+5. You can customize any [extra fields](https://commercejs.com/docs/api/#extra-fields) in a manner similar to the example if required, otherwise you can remove those lines.
 
 
 ## Local Project setup
