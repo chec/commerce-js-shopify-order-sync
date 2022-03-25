@@ -59,7 +59,7 @@ exports.create_order = (req, res) => {
     console.log(order);
     console.log("=====================================");
 
-    axios.post(`https://${process.env.SHOPIFY_API_KEY}:${process.env.SHOPIFY_API_PASSWORD}@${process.env.SHOPIFY_DOMAIN}/admin/api/2020-01/orders.json`, {
+    axios.post(`https://${process.env.SHOPIFY_API_KEY}:${process.env.SHOPIFY_API_ACCESS_TOKEN}@${process.env.SHOPIFY_DOMAIN}/admin/api/2020-01/orders.json`, {
       order: order,
     })
     .then((response) => {
